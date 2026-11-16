@@ -1,0 +1,32 @@
+services:
+  api:
+    build:
+      context: .
+      target: serving
+    ports: ["127.0.0.1:5105:8000"]
+    read_only: true
+    tmpfs: ["/tmp"]
+    restart: unless-stopped
+  train:
+    build:
+      context: .
+      target: training
+    profiles: ["training"]
+    volumes: ["training:/workspace"]
+  market:
+    build:
+      context: .
+      target: training
+    profiles: ["training"]
+    volumes: ["training:/workspace"]
+    command: ["python", "-m", "pipelines.market_experiment", "--data", "/workspace/data", "--artifacts", "/workspace/artifacts"]
+  mlflow:
+    build:
+      context: .
+      target: training
+    profiles: ["tracking"]
+    volumes: ["training:/workspace"]
+    ports: ["127.0.0.1:5115:5000"]
+    command: ["mlflow", "server", "--backend-store-uri", "sqlite:////workspace/artifacts/mlflow.db", "--host", "0.0.0.0", "--port", "5000", "--allowed-hosts", "localhost:5115,127.0.0.1:5115"]
+volumes:
+  training:

@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-15T22:28:03.367303+00:00",
+  "critical_feature": "parts_price_index",
+  "ks_pvalue": 0.0,
+  "practical_mean_shift": 0.20107067412393276,
+  "statistical_threshold": 0.01,
+  "practical_threshold": 0.1,
+  "retraining_requested": true,
+  "reference_rows": 35036,
+  "current_rows": 4000,
+  "synthetic": true
+}

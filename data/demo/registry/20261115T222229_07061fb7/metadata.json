@@ -1,0 +1,95 @@
+{
+  "version": "20261115T222229_07061fb7",
+  "created_at": "2026-11-15T22:22:29.575922+00:00",
+  "model": "lightgbm",
+  "mlflow_run_id": "afc125d032a94be6964db7e0e3be5303",
+  "validation_cost_mae": 24.197839991755167,
+  "validation_sha256": "80a48c0806afbba9ef2fde85e7e23331452791a6a408c051d475d0ef6c90cf7f",
+  "test_metrics": {
+    "cost_mae": 23.52946124963992,
+    "cost_rmse": 40.87337934199089,
+    "hours_mae": 0.1396718229892758
+  },
+  "test_coverage": {
+    "cost": 0.9048663741523734,
+    "hours": 0.9024730753889111
+  },
+  "interval_nominal": 0.9,
+  "quantiles": [
+    0.10518346063394957,
+    0.09198940423555611
+  ],
+  "train_rows": 35036,
+  "synthetic": true,
+  "features": [
+    "brand",
+    "model",
+    "year",
+    "kilometers",
+    "engine",
+    "repair",
+    "symptom",
+    "dtc",
+    "month",
+    "severity",
+    "part",
+    "labor_rate_eur",
+    "parts_price_index"
+  ],
+  "candidates": [
+    {
+      "name": "random_forest",
+      "run_id": "65f95a0d1a924deb85343f9cc2979110",
+      "model_uri": "models:/m-cd2cc507785a4e0eadd1ab6b28f34339",
+      "seconds": 8.62,
+      "cost_mae": 31.910232532844695,
+      "cost_rmse": 48.50663179051945,
+      "hours_mae": 0.14214458466738386
+    },
+    {
+      "name": "xgboost",
+      "run_id": "60fa8cbc1aaa4934ae01d87eff675c10",
+      "model_uri": "models:/m-912aa1881ef243f79b989ff56261d708",
+      "seconds": 1.31,
+      "cost_mae": 24.339546920257792,
+      "cost_rmse": 40.02765573050099,
+      "hours_mae": 0.1409337093248036
+    },
+    {
+      "name": "lightgbm",
+      "run_id": "afc125d032a94be6964db7e0e3be5303",
+      "model_uri": "models:/m-13b4d0e7d767472dbd743996cc271e5d",
+      "seconds": 1.67,
+      "cost_mae": 24.197839991755167,
+      "cost_rmse": 41.0662393598528,
+      "hours_mae": 0.13924725645880948
+    }
+  ],
+  "sha256": "fe2ac24cc8dfbeec44928d7867638428fbcb0142c07a83dd224213d7e9cafce8",
+  "numeric_ranges": {
+    "year": [
+      2004.0,
+      2026.0
+    ],
+    "kilometers": [
+      1217.0,
+      576494.0
+    ],
+    "month": [
+      1.0,
+      12.0
+    ],
+    "severity": [
+      1.0,
+      3.0
+    ],
+    "labor_rate_eur": [
+      36.73,
+      54.78
+    ],
+    "parts_price_index": [
+      0.85294,
+      1.14529
+    ]
+  }
+}

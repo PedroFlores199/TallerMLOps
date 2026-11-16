@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+artifacts/
+data/private/
+.env
+*.log
+*.db
+*.db-shm
+*.db-wal
+mlruns/
+.DS_Store

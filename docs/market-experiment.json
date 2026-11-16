@@ -1,0 +1,34 @@
+{
+  "synthetic": true,
+  "scenario": "Parts component prices +20%; labor rates unchanged",
+  "evaluation_rows": 4000,
+  "heldout_seed": 47,
+  "retraining_seed": 44,
+  "heldout_not_used_for_training": true,
+  "fixed_validation_unchanged": true,
+  "fixed_validation_sha256": "80a48c0806afbba9ef2fde85e7e23331452791a6a408c051d475d0ef6c90cf7f",
+  "drift": {
+    "at": "2026-11-15T22:28:03.367303+00:00",
+    "critical_feature": "parts_price_index",
+    "ks_pvalue": 0.0,
+    "practical_mean_shift": 0.20107067412393276,
+    "statistical_threshold": 0.01,
+    "practical_threshold": 0.1,
+    "retraining_requested": true,
+    "reference_rows": 35036,
+    "current_rows": 4000,
+    "synthetic": true
+  },
+  "before": {
+    "version": "20261115T222229_07061fb7",
+    "validation_mae": 24.197839991755167,
+    "current_market_cost_mae": 30.229182190743373
+  },
+  "after": {
+    "version": "20261115T222848_1f945185",
+    "validation_mae": 18.81625195807088,
+    "current_market_cost_mae": 19.704046673556
+  },
+  "promoted": true,
+  "improvement_pct": 34.81779775177089
+}

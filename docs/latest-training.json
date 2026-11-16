@@ -1,0 +1,71 @@
+{
+  "version": "20261115T222848_1f945185",
+  "created_at": "2026-11-15T22:28:48.136247+00:00",
+  "model": "lightgbm",
+  "mlflow_run_id": "4169bece3f8e43d38ab77f8dd5dd61b2",
+  "validation_cost_mae": 18.81625195807088,
+  "validation_sha256": "80a48c0806afbba9ef2fde85e7e23331452791a6a408c051d475d0ef6c90cf7f",
+  "test_metrics": {
+    "cost_mae": 18.470839516301847,
+    "cost_rmse": 29.78613439677343,
+    "hours_mae": 0.1384295468729837
+  },
+  "test_coverage": {
+    "cost": 0.9076585560430793,
+    "hours": 0.9008775428799362
+  },
+  "interval_nominal": 0.9,
+  "quantiles": [
+    0.08339958816830947,
+    0.09150769188235686
+  ],
+  "train_rows": 55036,
+  "synthetic": true,
+  "features": [
+    "brand",
+    "model",
+    "year",
+    "kilometers",
+    "engine",
+    "repair",
+    "symptom",
+    "dtc",
+    "month",
+    "severity",
+    "part",
+    "labor_rate_eur",
+    "parts_price_index"
+  ],
+  "candidates": [
+    {
+      "name": "random_forest",
+      "run_id": "e06ed6aee5974601a80c0ff9fc27d233",
+      "model_uri": "models:/m-8063c7ab07164cde8128b67f657d1558",
+      "seconds": 21.79,
+      "cost_mae": 23.82511385470369,
+      "cost_rmse": 34.63871905724033,
+      "hours_mae": 0.14083623743896762
+    },
+    {
+      "name": "xgboost",
+      "run_id": "03da7ffa7582406087878e3c909ff82b",
+      "model_uri": "models:/m-9049114014f44ee297c9eab84e1064e7",
+      "seconds": 7.91,
+      "cost_mae": 18.873544299267063,
+      "cost_rmse": 30.330521830461542,
+      "hours_mae": 0.13812043433914092
+    },
+    {
+      "name": "lightgbm",
+      "run_id": "4169bece3f8e43d38ab77f8dd5dd61b2",
+      "model_uri": "models:/m-b6265aed22154d9c9fc188a9643956a3",
+      "seconds": 12.51,
+      "cost_mae": 18.81625195807088,
+      "cost_rmse": 30.129581317161506,
+      "hours_mae": 0.13844958607278687
+    }
+  ],
+  "sha256": "aeffa6ddba3d01c62332e946d20a1952f0401bb323b24525991f6ac3d855c28b",
+  "promoted": true,
+  "pipeline_seconds": 43.53
+}

@@ -1,0 +1,186 @@
+{
+  "metrics": [
+    {
+      "id": "d55c03326f6d1448c0956716369cdb6b",
+      "metric_name": "DriftedColumnsCount(columns=brand,model,year,kilometers,engine,repair,symptom,dtc,month,severity,part,labor_rate_eur,parts_price_index,drift_share=0.2)",
+      "config": {
+        "type": "evidently:metric_v2:DriftedColumnsCount",
+        "columns": [
+          "brand",
+          "model",
+          "year",
+          "kilometers",
+          "engine",
+          "repair",
+          "symptom",
+          "dtc",
+          "month",
+          "severity",
+          "part",
+          "labor_rate_eur",
+          "parts_price_index"
+        ],
+        "drift_share": 0.2
+      },
+      "value": {
+        "count": 1.0,
+        "share": 0.07692307692307693
+      }
+    },
+    {
+      "id": "94f0cf3140c16802f7f57827546574d3",
+      "metric_name": "ValueDrift(column=brand,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "brand",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.0220736272249954
+    },
+    {
+      "id": "9dfbf97070d3c7be7cacf0e82c750aa2",
+      "metric_name": "ValueDrift(column=model,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "model",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.034981925639321454
+    },
+    {
+      "id": "dec739b2f689e71b63ab95bbe2d49568",
+      "metric_name": "ValueDrift(column=year,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "year",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.018460465656633826
+    },
+    {
+      "id": "2bf98983128e308050e83dc255e0b173",
+      "metric_name": "ValueDrift(column=kilometers,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "kilometers",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.020948321831417947
+    },
+    {
+      "id": "b33305de7b1bb50f0e24b32aac1aae13",
+      "metric_name": "ValueDrift(column=engine,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "engine",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.009758113634457855
+    },
+    {
+      "id": "a2b307783ee3befdd3ae424fbd0f8caf",
+      "metric_name": "ValueDrift(column=repair,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "repair",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.016002852791052357
+    },
+    {
+      "id": "cc377dffb23f420a175a0fe6895aec9b",
+      "metric_name": "ValueDrift(column=symptom,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "symptom",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.015621243392875534
+    },
+    {
+      "id": "290c87bfb85e3f1866e64098c3603be9",
+      "metric_name": "ValueDrift(column=dtc,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "dtc",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.008563528763287441
+    },
+    {
+      "id": "bb172f3d97e12dbbb2c77f5e8a622a5f",
+      "metric_name": "ValueDrift(column=month,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "month",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.015327127152448517
+    },
+    {
+      "id": "eb86c072b1dc2e953dec048bf3bc4fc5",
+      "metric_name": "ValueDrift(column=severity,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "severity",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.00424302867869276
+    },
+    {
+      "id": "d653b6bac1db238151da58183d972135",
+      "metric_name": "ValueDrift(column=part,method=Jensen-Shannon distance,threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "part",
+        "method": "Jensen-Shannon distance",
+        "threshold": 0.1
+      },
+      "value": 0.01608158301966925
+    },
+    {
+      "id": "3ec26cbed70c3b436a78df2d95b113e8",
+      "metric_name": "ValueDrift(column=labor_rate_eur,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "labor_rate_eur",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 0.017903016816007634
+    },
+    {
+      "id": "c1a9addadf91142536569806bcd00382",
+      "metric_name": "ValueDrift(column=parts_price_index,method=Wasserstein distance (normed),threshold=0.1)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "parts_price_index",
+        "method": "Wasserstein distance (normed)",
+        "threshold": 0.1
+      },
+      "value": 5.7606991890257255
+    },
+    {
+      "id": "aee974111a38219a1908d9f5c9ac805c",
+      "metric_name": "ValueDrift(column=parts_price_index,method=ks,threshold=0.01)",
+      "config": {
+        "type": "evidently:metric_v2:ValueDrift",
+        "column": "parts_price_index",
+        "method": "ks",
+        "threshold": 0.01
+      },
+      "value": 0.0
+    }
+  ],
+  "tests": []
+}

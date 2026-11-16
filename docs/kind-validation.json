@@ -1,0 +1,78 @@
+{
+  "at": "2026-11-15T23:41:29.603154+00:00",
+  "environment": "Kind on local Docker",
+  "canary_requests": 500,
+  "warmup_lanes": {
+    "champion": 69,
+    "challenger": 1
+  },
+  "canary_fallbacks": 0,
+  "lanes": {
+    "champion": 446,
+    "challenger": 54
+  },
+  "versions": {
+    "20261115T222229_07061fb7": 446,
+    "20261115T222848_1f945185": 54
+  },
+  "rolling_successful_requests": 160,
+  "rolling_errors": [],
+  "pods": [
+    {
+      "name": "challenger-6fb48bc76-pwqrn",
+      "namespace": "taller",
+      "containers": [
+        {
+          "name": "api",
+          "restarts": 0,
+          "ready": true
+        }
+      ]
+    },
+    {
+      "name": "champion-5fff79bfd4-98bnt",
+      "namespace": "taller",
+      "containers": [
+        {
+          "name": "api",
+          "restarts": 0,
+          "ready": true
+        }
+      ]
+    },
+    {
+      "name": "champion-5fff79bfd4-xqsv5",
+      "namespace": "taller",
+      "containers": [
+        {
+          "name": "api",
+          "restarts": 0,
+          "ready": true
+        }
+      ]
+    },
+    {
+      "name": "champion-65b6c6578f-2b9qq",
+      "namespace": "taller",
+      "containers": [
+        {
+          "name": "api",
+          "restarts": 0,
+          "ready": true
+        }
+      ]
+    },
+    {
+      "name": "router-844ddb5cdd-bdtwm",
+      "namespace": "taller",
+      "containers": [
+        {
+          "name": "router",
+          "restarts": 0,
+          "ready": true
+        }
+      ]
+    }
+  ],
+  "scope": "Real local HTTP test after service warm-up, not a guarantee for production traffic."
+}
